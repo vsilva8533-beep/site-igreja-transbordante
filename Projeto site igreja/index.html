@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Igreja Transbordante</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playlist+Script&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <!-- ===================================================
+       HEADER / NAVBAR (FIXO)
+  ==================================================== -->
+  <header class="navbar" role="banner">
+    <div class="container navbar-inner">
+
+      <a class="logo" href="#inicio" aria-label="Ir para o início">
+        <img src="img/logo transp.png" alt="Logo Igreja Transbordante" />
+        <div class="texto-logo">
+          <span class="igreja">IGREJA</span>
+          <span class="nome">Transbordante</span>
+        </div>
+      </a>
+
+      <!-- Botão hambúrguer (abre via :target indo para #menu) -->
+      <a class="menu-toggle" href="#menu" aria-label="Abrir menu">☰</a>
+
+      <!-- Menu -->
+      <nav id="menu" class="menu" aria-label="Menu principal">
+        <!-- Botão fechar (mobile) -->
+        <a class="menu-close" href="#inicio" aria-label="Fechar menu">✕</a>
+
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#cultos">Horários</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#midias">Mídias</a>
+        <a href="#contato">Contato</a>
+        <a href="#live" class="live-btn">Live</a>
+      </nav>
+
+      <!-- Overlay (clicar fora fecha voltando pro #inicio) -->
+      <a class="nav-overlay" href="#inicio" aria-hidden="true"></a>
+
+    </div>
+  </header>
+
+  <!-- ===================================================
+       HERO / INÍCIO
+  ==================================================== -->
+  <section id="inicio" class="hero" aria-label="Início">
+    <div class="overlay" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <h1>Uma igreja para amar, acolher e direcionar</h1>
+      <p>Venha viver o propósito de Deus conosco</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contato">Como chegar</a>
+        <a class="btn btn-ghost" href="#live">Assistir ao vivo</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ===================================================
+         SOBRE
+    ==================================================== -->
+    <section id="sobre" class="section" aria-label="Sobre a igreja">
+      <div class="container">
+        <header class="section-header">
+          <h2>Sobre a Igreja</h2>
+          <p class="section-subtitle">
+            Uma família de fé comprometida com a Palavra, comunhão e serviço.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              A Igreja Transbordante existe para glorificar a Deus,
+              transformar vidas e impactar gerações através do amor,
+              da fé e da Palavra de Cristo.
+              Somos uma família comprometida com o ensino bíblico,
+              a comunhão entre irmãos e o serviço ao próximo, vivendo
+              o Evangelho de forma prática e relevante.
+            </p>
+
+            <a href="historia.html" class="btn btn-primary btn-fit">
+              Conheça nossa história
+            </a>
+          </div>
+
+          <div class="about-media" aria-hidden="true">
+            <div class="about-photo">
+              <img src="img/foto3.jpg" alt="Foto da igreja">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         HORÁRIOS DOS CULTOS
+    ==================================================== -->
+    <section id="cultos" class="section bg-light" aria-label="Horários dos cultos">
+      <div class="container">
+        <header class="section-header">
+          <h2>Nossos Cultos</h2>
+          <p class="section-subtitle">Horários fixos para você se programar.</p>
+        </header>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Domingo</h3>
+            <p class="card-line"><strong>09:00</strong> — Culto da Manhã</p>
+            <p class="card-line"><strong>18:30</strong> — Culto da Noite</p>
+          </article>
+
+          <article class="card">
+            <h3>Quinta-feira</h3>
+            <p class="card-line"><strong>19:30</strong> — Quinta Transbordante</p>
+            <p class="card-muted">Culto de palavra e fortalecimento.</p>
+          </article>
+
+          <article class="card">
+            <h3>Primeira vez?</h3>
+            <p class="card-line">Chegue com antecedência e venha do jeito que você está 🤍</p>
+            <a class="btn btn-ghost btn-fit" href="#contato">Endereço e contato</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         AGENDA
+    ==================================================== -->
+    <section id="agenda" class="section" aria-label="Agenda da igreja">
+      <div class="container">
+        <header class="section-header">
+          <h2>Agenda da Igreja</h2>
+          <p class="section-subtitle">Eventos e encontros especiais.</p>
+        </header>
+
+        <div class="agenda-lista">
+          <details class="agenda-item">
+            <summary>
+              <span class="data">15</span>
+              <span class="info">
+                <strong>Encontro de Jovens</strong>
+                <small>Fevereiro</small>
+              </span>
+            </summary>
+            <p>
+              Data: 15/16/17 Fevereiro <br>
+              Chácara / Lençóis Paulista <br>
+              Mais informações: Letícia Evangelista (14) 99115-4774 <br>
+              MENORES DE 13 ANOS SOMENTE COM RESPONSÁVEL <br>
+              Valor: R$ 200,00 por pessoa (3 dias)
+            </p>
+          </details>
+
+          <details class="agenda-item">
+            <summary>
+              <span class="data">16</span>
+              <span class="info">
+                <strong>Encontro de Jovens</strong>
+                <small>Fevereiro</small>
+              </span>
+            </summary>
+            <p>
+              Data: 15/16/17 Fevereiro <br>
+              Chácara / Lençóis Paulista <br>
+              Mais informações: Letícia Evangelista (14) 99115-4774 <br>
+              MENORES DE 13 ANOS SOMENTE COM RESPONSÁVEL <br>
+              Valor: R$ 200,00 por pessoa (3 dias)
+            </p>
+          </details>
+
+          <details class="agenda-item">
+            <summary>
+              <span class="data">17</span>
+              <span class="info">
+                <strong>Encontro de Jovens</strong>
+                <small>Fevereiro</small>
+              </span>
+            </summary>
+            <p>
+              Data: 15/16/17 Fevereiro <br>
+              Chácara / Lençóis Paulista <br>
+              Mais informações: Letícia Evangelista (14) 99115-4774 <br>
+              MENORES DE 13 ANOS SOMENTE COM RESPONSÁVEL <br>
+              Valor: R$ 200,00 por pessoa (3 dias)
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         MÍDIAS
+    ==================================================== -->
+    <section id="midias" class="section bg-light midias" aria-label="Mídias e redes sociais">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="midias-titulo">Siga a Igreja Transbordante</h2>
+          <p class="midias-subtitulo">
+            Acompanhe mensagens, cultos e novidades nas redes sociais.
+          </p>
+        </header>
+
+        <div class="midias-icons">
+          <a href="https://www.instagram.com/igreja.transbordante_/" target="_blank" rel="noopener">
+            <img src="img/logo-instagram.png" alt="Instagram">
+          </a>
+
+          <a href="https://www.youtube.com/@IgrejaTransbordante" target="_blank" rel="noopener">
+            <img src="img/logo-youtube.png" alt="YouTube">
+          </a>
+
+          <a href="https://web.telegram.org/k/#-2101232813" target="_blank" rel="noopener">
+            <img src="img/logo-telegram.png" alt="Telegram">
+          </a>
+
+          <a href="https://wa.me/" target="_blank" rel="noopener">
+            <img src="img/logo-whatsapp.png" alt="WhatsApp">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         CONTATO
+    ==================================================== -->
+    <section id="contato" class="section" aria-label="Contato">
+      <div class="container">
+        <header class="section-header">
+          <h2>Contato</h2>
+          <p class="section-subtitle">Fale com a gente e venha nos visitar.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <p class="contact-line">📍 Av: Jacomo Augusto Pacola, 2424</p>
+            <p class="contact-line">📞 (14) 99810-1331</p>
+            <p class="contact-line">📧 igrejatransbordante@hotmail.com</p>
+
+            <div class="contact-actions">
+              <a class="btn btn-primary btn-fit" target="_blank" rel="noopener"
+                href="https://www.google.com/maps/search/?api=1&query=Av%3A%20Jacomo%20Augusto%20Pacola%2C%202424">
+                Abrir no Maps
+              </a>
+              <a class="btn btn-ghost btn-fit" href="#cultos">Ver horários</a>
+            </div>
+          </div>
+
+          <div class="contact-note" aria-hidden="true">
+            <div class="contact-box">
+              <h3>Seja bem-vindo!</h3>
+              <p>Se precisar de ajuda, é só chamar. A igreja é casa. 🤍</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         LIVE
+    ==================================================== -->
+    <section id="live" class="section bg-light live" aria-label="Ao vivo">
+      <div class="container">
+        <header class="section-header">
+          <h2>Ao Vivo</h2>
+          <p class="section-subtitle">Acompanhe nossos cultos ao vivo.</p>
+        </header>
+
+        <div class="live-box">
+          <!-- Cole aqui o iframe da live do YouTube quando quiser -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Igreja Transbordante • Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
